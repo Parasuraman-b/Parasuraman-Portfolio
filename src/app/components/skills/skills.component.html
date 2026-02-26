@@ -1,0 +1,25 @@
+<section id="skills" class="skills">
+
+  <h2 data-aos="fade-up">Professional Skills</h2>
+
+  <div class="skills-box" data-aos="fade-up" data-aos-delay="150">
+
+    <div class="skill" *ngFor="let skill of skills">
+      
+      <div class="label">
+        <span>{{ skill.name }}</span>
+        <span>{{ skill.value }}%</span>
+      </div>
+
+      <div class="progress">
+        <div class="fill"
+          data-aos="progress"
+          [style.--value]="skill.value">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,100 @@
+.about {
+  padding: 90px 16px;
+  background: #f5f6f7;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+/* Main Card */
+.row {
+  max-width: 950px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+  display: flex;
+}
+
+/* Left Section */
+.left {
+  background: linear-gradient(135deg, #2f8f2f, #4caf50);
+  color: white;
+  padding: 40px 25px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  text-align: center;
+}
+
+/* Right Section */
+.right {
+  padding: 35px 30px;
+  text-align: left;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 14px 30px;
+  flex: 1;
+}
+
+.right div {
+  font-size: 15px;
+  color: #333;
+  word-break: break-word;
+}
+
+/* ===============================
+   TABLET RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+
+  .row {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    font-size: 18px;
+    padding: 28px 15px;
+  }
+
+  .right {
+    /* grid-template-columns: 1fr 1fr; */
+    padding: 25px 22px;
+  }
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .about {
+    padding: 70px 12px;
+  }
+
+  .right {
+    /* grid-template-columns: 1fr; */
+    padding: 22px 18px;
+  }
+
+  .left {
+    font-size: 17px;
+  }
+
+  .right div {
+    font-size: 14px;
+  }
+}

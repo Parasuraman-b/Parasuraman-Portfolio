@@ -1,0 +1,170 @@
+.education-section {
+  padding: 90px 16px;
+  background: #f6f6f6;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Card Layout */
+.edu-card {
+  max-width: 950px;
+  margin: 0 auto 25px;
+  background: #fff;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Left Side */
+.left {
+  background: linear-gradient(135deg, #2f8f2f, #4caf50);
+  color: white;
+  padding: 40px 25px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  text-align: center;
+}
+
+.year {
+  font-size: 14px;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.left h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Right Side */
+.right {
+  padding: 28px 30px;
+  text-align: left;
+  flex: 1;
+}
+
+.right h4 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.college {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #666;
+}
+
+.score {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #333;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .edu-card {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px 20px;
+    text-align: left;
+  }
+
+  .year {
+    font-size: 13px;
+  }
+
+  .left h3 {
+    font-size: 16px;
+  }
+
+  .right {
+    padding: 18px 20px;
+  }
+
+  .right h4 {
+    font-size: 18px;
+  }
+
+  .college,
+  .score {
+    font-size: 13px;
+  }
+}
+
+/* ===============================
+   TABLET RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+
+  .edu-card {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    font-size: 18px;
+    padding: 28px 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    /* grid-template-columns: 1fr 1fr;  */
+    padding: 25px 22px;
+  }
+}
+
+
+/* ===============================
+   SMALL MOBILE DEVICES
+================================ */
+
+@media (max-width: 480px) {
+
+  .education-section {
+    padding: 70px 12px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .left {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right h4 {
+    font-size: 17px;
+  }
+
+}

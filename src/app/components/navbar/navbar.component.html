@@ -1,0 +1,21 @@
+<header data-aos="fade-down" data-aos-duration="400">
+  <div class="nav-container">
+
+    <div class="logo"><a href="#hero" (click)="closeMenu()">PERSONAL PORTFOLIO</a></div>
+
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav [class.active]="menuOpen">
+      <a href="#about" (click)="closeMenu()">ABOUT</a>
+      <a href="#skills" (click)="closeMenu()">SKILLS</a>
+      <a href="#education" (click)="closeMenu()">EDUCATION</a>
+      <a href="#achievements" (click)="closeMenu()">ACHIEVEMENTS</a>
+      <a href="#contact" (click)="closeMenu()">CONTACT</a>
+    </nav>
+
+  </div>
+</header>

@@ -1,0 +1,35 @@
+/* Social icons */
+.social {
+  margin: 50px 0 15px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.social i {
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.social i:hover {
+  color: #3c8d3c;
+  transform: scale(1.1);
+}
+
+.name {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.copy {
+  font-size: 13px;
+  color: #777;
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+}

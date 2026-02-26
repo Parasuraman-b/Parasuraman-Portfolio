@@ -1,0 +1,32 @@
+<section id="achievements" class="achievements">
+
+  <h2 data-aos="fade-up" data-aos-duration="500">
+    {{ title }}
+  </h2>
+
+  <div class="row"
+       *ngFor="let box of achievements; let i = index"
+       data-aos="fade-up"
+       data-aos-duration="500"
+       [attr.data-aos-delay]="i * 120">
+
+    <div class="left"
+         data-aos="fade-right"
+         data-aos-duration="400">
+      {{ box.leftTitle }}
+    </div>
+
+    <div class="right">
+
+      <div *ngFor="let info of box.infoList; let j = index"
+           data-aos="fade-left"
+           [attr.data-aos-delay]="100 + j * 60">
+           <span class="arrow">➤</span>
+        {{ info }}
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,30 @@
+<section id="education" class="education-section">
+
+  <h2 
+    data-aos="fade-up" 
+    data-aos-duration="500">
+    {{ title }}
+  </h2>
+
+  <div class="edu-card"
+       *ngFor="let edu of educationList; let i = index"
+       data-aos="fade-up"
+       [attr.data-aos-delay]="i * 150">
+
+    <div class="left">
+     <div data-aos="fade-right" data-aos-delay="100">
+      <span class="year">{{edu.year}}</span>
+      <h3>{{edu.degree}}</h3>
+     </div>
+    </div>
+
+    <div class="right" data-aos="fade-left" data-aos-delay="100">
+      <h4 data-aos="fade-left" data-aos-delay="200">{{edu.title}}</h4>
+      <p class="college" data-aos="fade-left" data-aos-delay="300">{{edu.college}}</p>
+      <p class="score" data-aos="fade-left" data-aos-delay="400">{{edu.score}}</p>
+    </div>
+
+  </div>
+
+</section>
+
