@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  background: url('/assets/images/bridge-bg.jpg') center/cover fixed no-repeat;
+  background: url('./assets/images/bridge-bg.jpg') center/cover fixed no-repeat;
   position: relative;
   display: flex;
   justify-content: center;
